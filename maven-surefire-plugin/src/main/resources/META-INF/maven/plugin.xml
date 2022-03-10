@@ -437,7 +437,7 @@ JVM is executing one test-class. See also the parameter {@code reuseForks} for t
         </parameter>
         <parameter>
           <name>forkNode</name>
-          <type>org.apache.maven.surefire.extensions.ForkNodeFactory</type>
+          <type>com.github.crizzis.maven-surefire.extensions.ForkNodeFactory</type>
           <since>3.0.0-M5</since>
           <required>false</required>
           <editable>true</editable>
@@ -1218,7 +1218,7 @@ the actual number of classes/methods will decide. Setting this to &quot;true&quo
         <failOnFlakeCount implementation="int" default-value="0">${surefire.failOnFlakeCount}</failOnFlakeCount>
         <forkCount implementation="java.lang.String" default-value="1">${forkCount}</forkCount>
         <forkMode implementation="java.lang.String" default-value="once">${forkMode}</forkMode>
-        <forkNode implementation="org.apache.maven.surefire.extensions.ForkNodeFactory">${surefire.forkNode}</forkNode>
+        <forkNode implementation="com.github.crizzis.maven-surefire.extensions.ForkNodeFactory">${surefire.forkNode}</forkNode>
         <forkedProcessExitTimeoutInSeconds implementation="int" default-value="30">${surefire.exitTimeout}</forkedProcessExitTimeoutInSeconds>
         <forkedProcessTimeoutInSeconds implementation="int">${surefire.timeout}</forkedProcessTimeoutInSeconds>
         <groups implementation="java.lang.String">${groups}</groups>
@@ -1287,7 +1287,7 @@ the actual number of classes/methods will decide. Setting this to &quot;true&quo
           <field-name>logger</field-name>
         </requirement>
         <requirement>
-          <role>org.apache.maven.surefire.providerapi.ProviderDetector</role>
+          <role>com.github.crizzis.maven-surefire.providerapi.ProviderDetector</role>
           <field-name>providerDetector</field-name>
         </requirement>
         <requirement>
@@ -1303,37 +1303,37 @@ the actual number of classes/methods will decide. Setting this to &quot;true&quo
   </mojos>
   <dependencies>
     <dependency>
-      <groupId>org.apache.maven.surefire</groupId>
+      <groupId>com.github.crizzis.maven-surefire</groupId>
       <artifactId>maven-surefire-common</artifactId>
       <type>jar</type>
       <version>3.0.0-M6-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.maven.surefire</groupId>
+      <groupId>com.github.crizzis.maven-surefire</groupId>
       <artifactId>surefire-api</artifactId>
       <type>jar</type>
       <version>3.0.0-M6-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.maven.surefire</groupId>
+      <groupId>com.github.crizzis.maven-surefire</groupId>
       <artifactId>surefire-logger-api</artifactId>
       <type>jar</type>
       <version>3.0.0-M6-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.maven.surefire</groupId>
+      <groupId>com.github.crizzis.maven-surefire</groupId>
       <artifactId>surefire-extensions-api</artifactId>
       <type>jar</type>
       <version>3.0.0-M6-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.maven.surefire</groupId>
+      <groupId>com.github.crizzis.maven-surefire</groupId>
       <artifactId>surefire-booter</artifactId>
       <type>jar</type>
       <version>3.0.0-M6-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.maven.surefire</groupId>
+      <groupId>com.github.crizzis.maven-surefire</groupId>
       <artifactId>surefire-extensions-spi</artifactId>
       <type>jar</type>
       <version>3.0.0-M6-SNAPSHOT</version>
@@ -1369,7 +1369,7 @@ the actual number of classes/methods will decide. Setting this to &quot;true&quo
       <version>2.0.1</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.maven.surefire</groupId>
+      <groupId>com.github.crizzis.maven-surefire</groupId>
       <artifactId>surefire-shared-utils</artifactId>
       <type>jar</type>
       <version>3.0.0-M6-SNAPSHOT</version>
