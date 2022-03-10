@@ -27,7 +27,7 @@
         <version>3.0.0-M6-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.apache.maven.plugins</groupId>
+    <groupId>com.github.crizzis.maven-surefire</groupId>
     <artifactId>maven-surefire-plugin</artifactId>
     <packaging>maven-plugin</packaging>
 
@@ -63,10 +63,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-plugin-plugin</artifactId>
-            </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
