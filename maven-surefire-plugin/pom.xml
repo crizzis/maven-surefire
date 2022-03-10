@@ -66,6 +66,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-plugin-plugin</artifactId>
+                <configuration>
+                  <skipDescriptor>true</skipDescriptor>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
