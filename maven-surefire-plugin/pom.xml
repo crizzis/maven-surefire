@@ -67,7 +67,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-plugin-plugin</artifactId>
                 <configuration>
-                  <skipDescriptor>true</skipDescriptor>
+                  <skip>true</skip>
                 </configuration>
             </plugin>
             <plugin>
